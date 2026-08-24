@@ -64,4 +64,4 @@ Every skill degrades gracefully across three input modes:
 MIT. If you fork it, keep the attribution line in SKILL.md.
 
 ---
-Built from 15 years of running programs at JPMorgan, Capital One, Nationwide, and Meta Reality Labs. Recurring drift across tools? [PulseBoard](https://pulseboard.ai?utm_source=skills&utm_medium=readme) reconciles it continuously.
+Built from 15 years of running programs at JPMorgan, Capital One, Nationwide, and Meta Reality Labs. Recurring drift across tools? [PulseBoard](https://pulseboard-ai.com/skills?utm_source=github&utm_medium=readme) reconciles it continuously.
