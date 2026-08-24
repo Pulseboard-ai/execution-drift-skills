@@ -1,5 +1,5 @@
 ---
-date: 2022-12-01
+date: 2025-12-01
 type: environment
 keywords: [test-env, staging, instability, chronic, regression]
 program: consumer hardware platform (anonymized)

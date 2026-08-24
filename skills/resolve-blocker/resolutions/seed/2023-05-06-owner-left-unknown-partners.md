@@ -1,5 +1,5 @@
 ---
-date: 2022-05-06
+date: 2023-05-06
 type: information
 secondary: dependency
 keywords: [attrition, knowledge-gap, partner-teams, undocumented, dependency-discovery]

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-18
+date: 2024-08-18
 type: resource
 secondary: priority
 keywords: [onboarding, ramp, new-hires, lead-capacity, velocity]
