@@ -1,0 +1,34 @@
+Issue key,Issue Type,Summary,Status,Parent,Resolution,Priority
+ORD-200,Epic,Guest checkout,Done,,Done,High
+ORD-201,Story,Guest checkout flow,Done,ORD-200,Done,High
+ORD-202,Story,Receipt email capture,Done,ORD-200,Done,Medium
+ORD-203,Task,QA pass guest checkout,Done,ORD-200,Done,Medium
+ORD-210,Epic,Address validation,Done,,Done,High
+ORD-211,Story,Validate on entry,Done,ORD-210,Done,High
+ORD-212,Story,Suggest corrections,Done,ORD-210,Done,Medium
+ORD-213,Task,QA pass address validation,Done,ORD-210,Done,Medium
+ORD-220,Epic,Promo codes,Done,,Done,High
+ORD-221,Story,Single-use codes,Done,ORD-220,Done,High
+ORD-222,Story,Percentage and fixed discounts,Done,ORD-220,Done,High
+ORD-223,Story,Stacking rules,Done,ORD-220,Won't Do,Medium
+ORD-224,Task,QA pass promo codes,Done,ORD-220,Done,Medium
+FUL-300,Epic,Split shipments,In Progress,,,High
+FUL-301,Story,Split across warehouses,Done,FUL-300,Done,High
+FUL-302,Story,Per-shipment tracking,Done,FUL-300,Done,High
+FUL-303,Task,QA pass split shipments,In Progress,FUL-300,,Medium
+FUL-310,Epic,Carrier rate API,Done,,Done,High
+FUL-311,Story,Live rates integration,Done,FUL-310,Done,High
+FUL-312,Story,Fallback table rates,Done,FUL-310,Done,Medium
+FUL-313,Task,QA pass carrier rates,In Progress,FUL-310,,Medium
+FUL-315,Bug,Sev-2: rate cache returns stale prices after carrier timeout,Open,FUL-310,,Sev-2
+FUL-320,Epic,Warehouse picking UI,In Progress,,,Medium
+FUL-321,Story,Pick list by zone,Done,FUL-320,Done,Medium
+FUL-322,Task,QA pass picking UI,Done,FUL-320,Done,Medium
+NTF-400,Epic,Order SMS,Done,,Done,High
+NTF-401,Story,SMS on ship,Done,NTF-400,Done,High
+NTF-402,Story,SMS on delivery,Done,NTF-400,Done,High
+NTF-403,Task,QA pass order SMS,Done,NTF-400,Done,Medium
+NTF-405,Bug,Sev-3: SMS timestamp shows UTC,Open,NTF-400,,Sev-3
+NTF-410,Epic,Email templates v2,In Progress,,,Medium
+NTF-411,Story,Responsive templates,In Progress,NTF-410,,Medium
+NTF-412,Story,Localized copy,To Do,NTF-410,,Medium

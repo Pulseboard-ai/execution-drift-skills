@@ -9,7 +9,7 @@ User pastes any mix of status doc, ticket list, PR list, Slack thread, PRD.
 ## Export (directory of files — any subset)
 - `status.md` — reported status. Headings = features. Look for Done / On track / At risk / Blocked.
 - `jira.csv` — columns used: `Issue key, Issue Type, Summary, Status, Parent, Resolution, Priority`. Extras ignored.
-- `prs.json` — `gh pr list --state all --json number,title,state,isDraft,mergedAt,baseRefName,body,url`.
+- `prs.json` — `gh pr list --state all --json number,title,state,isDraft,createdAt,mergedAt,baseRefName,body,url`. `createdAt` drives the stalled-PR check (`--sprint-days`, default 14).
 - `slack.txt` — one message per line: `YYYY-MM-DD HH:MM #channel @user: text`.
 - `prd.md` — requirement lines matching `R-\d+`; dependent teams as `Depends on: team-a, team-b`.
 - `deploys.txt` — optional: `YYYY-MM-DD tag sha env` per line.

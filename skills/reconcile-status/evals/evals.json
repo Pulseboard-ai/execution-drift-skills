@@ -1,8 +1,10 @@
 {
   "skill": "reconcile-status",
   "cases": [
+    {"id": "large-answer-key", "prompt": "Run reconcile-status on samples-large and compare against ANSWER_KEY.md.",
+     "assertions": ["Address validation ✖ at link 3 (merged to feature branch)", "Split shipments ✖ at links 3 and 5 (revert)", "Carrier rate API ✖ at links 2, 5, 6", "Warehouse picking UI flagged as reported At Risk with chain complete", "Order SMS ✖ at link 8 (support-team) and NTF-400→FUL-310 listed under undeclared dependencies", "Email templates v2 flagged stalled beyond sprint", "Promo codes ORD-223 Won't Do appears in Notes", "Guest checkout has no ✖"]},
     {"id": "planted-discrepancy", "prompt": "Run reconcile-status on the samples directory.",
-     "assertions": ["Checkout v2 row shows ✖ at link 2 citing PAY-144 and at link 3 citing PR #88", "Checkout v2 row shows ✖ at link 6 citing PAY-151", "Checkout v2 row shows ✖ at link 8 naming notifications-team", "Search filters row has no ✖", "Links 1 and 7 are 'manual' for both rows", "No RAG color, score, or percent appears"]},
+     "assertions": ["Checkout v2 row shows ✖ at link 2 citing PAY-144 and at link 3 citing PR #88", "Checkout v2 row shows ✖ at link 6 citing PAY-151", "Checkout v2 link 8 is – (n/a until deployed)", "Search filters row has no ✖", "Links 1 and 7 are 'manual' for both rows", "No RAG color, score, or percent appears"]},
     {"id": "paste-only", "prompt": "Here's my status doc and a list of tickets, is this really done? <paste status.md and jira.csv contents>",
      "assertions": ["Produces the 8-column table without asking for more files", "Marks PR, prod, notified links as ? (unverified) and says what would confirm them"]},
     {"id": "no-status-doc", "prompt": "Reconcile these Jira and GitHub exports for the payments program. <jira.csv, prs.json>",

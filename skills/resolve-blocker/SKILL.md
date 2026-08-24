@@ -35,6 +35,9 @@ One workflow, seven types of blocker. The output is a decision memo leadership c
 - Blameless. Constraints, not people: "the tax contract wasn't finalized", not "platform didn't deliver".
 - Do not produce a status update. A memo asks for something by a date.
 
+## If `scripts/` is missing
+Some skill uploaders strip executables. Precedent: read `resolutions/**/*.md` directly, match on `type:` then keywords. Memo lint: apply `references/memo-lint.md` by hand.
+
 ## Files
 
 - `references/blocker-taxonomy.md` — 7 types, tells, option patterns, typical escalation rung

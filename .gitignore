@@ -5,3 +5,4 @@ skills/resolve-blocker/resolutions/*.md
 skills/resolve-blocker/resolutions/seed/*.private.md
 __pycache__/
 .DS_Store
+*.zip

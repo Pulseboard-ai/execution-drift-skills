@@ -15,8 +15,8 @@ Coming: `release-readiness`, `reconcile-dependencies`, `reconcile-plan`.
 
 ```bash
 # skills.sh (Claude Code, Codex, Cursor, Gemini CLI, Copilot, ...)
-npx skills add pulseboard-ai/execution-drift-skills --skill reconcile-status
-npx skills add pulseboard-ai/execution-drift-skills --skill resolve-blocker
+npx skills add <org>/execution-drift-skills --skill reconcile-status
+npx skills add <org>/execution-drift-skills --skill resolve-blocker
 
 # manual
 cp -r skills/reconcile-status ~/.claude/skills/
@@ -28,10 +28,10 @@ Claude.ai / Cowork: upload the skill folder as a custom skill. Both skills accep
 ## Try it in 60 seconds
 
 ```
-> Run reconcile-status on skills/reconcile-status/samples
+> Run reconcile-status on skills/reconcile-status/samples-large and score it against ANSWER_KEY.md
 ```
 
-You get an 8-column table for each feature in the sample program, one row already showing a feature marked *Done* in the status doc with an unmerged PR and an open Sev-2.
+Eight features, nine planted drift patterns — a reverted deploy, a PR merged to the wrong branch, a sandbagged "at risk", a dependency the tester found that the PRD never named. All synthetic.
 
 ## Inputs
 

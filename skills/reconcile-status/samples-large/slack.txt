@@ -1,0 +1,17 @@
+2026-08-05 10:12 #releases @ci: deployed v2026.08.05.1 — ORD-201 ORD-202 guest checkout
+2026-08-05 11:00 #support-team @dana: support-team fyi ORD-200 guest checkout is live, macro updated
+2026-08-06 09:30 #qa @sam: ORD-203 qa passed guest checkout on prod
+2026-08-07 14:05 #releases @ci: deployed v2026.08.07.1 — ORD-221 ORD-222 promo codes, FUL-321 picking UI
+2026-08-07 15:10 #ops-team @kai: ops-team picking UI FUL-320 is live in prod, zone lists match the floor plan
+2026-08-08 11:20 #releases @ci: deployed v2026.08.08.2 — NTF-401 NTF-402 order SMS
+2026-08-08 16:00 #qa @sam: NTF-403 qa passed order sms on prod
+2026-08-09 10:00 #qa @sam: FUL-322 qa passed picking UI, sign-off sent to lead
+2026-08-11 14:30 #checkout-eng @lena: ORD-210 PR #131 merged to the feature branch, main integration tomorrow
+2026-08-12 10:45 #releases @ci: deployed v2026.08.12.1 — FUL-301 FUL-302 split shipments
+2026-08-12 18:20 #fulfillment-eng @raj: seeing inventory double-decrement on split orders, FUL-300 investigating
+2026-08-13 09:20 #releases @ci: deployed v2026.08.13.1 — revert of split shipments FUL-301 FUL-302
+2026-08-13 17:05 #fulfillment-eng @raj: FUL-310 carrier rate API PR #142 merged, needs deploy slot
+2026-08-14 09:00 #qa @sam: NTF-400 testing delivery SMS — blocked, delivery events depend on FUL-310 carrier webhooks which aren't in prod. not in the PRD
+2026-08-14 11:30 #qa @sam: FUL-315 sev-2 filed: rate cache returns stale prices after carrier timeout
+2026-08-15 10:00 #fulfillment-eng @raj: finance-team heads up ORD-220 promo codes shipped, stacking rules ORD-223 deferred to Q4
+2026-08-15 16:40 #notifications-eng @mei: NTF-411 still WIP, waiting on design tokens

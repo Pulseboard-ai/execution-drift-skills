@@ -5,7 +5,7 @@ description: Reconciles a program's reported status against what Jira, GitHub, S
 
 # reconcile-status
 
-Status reports summarize one source. This skill cross-examines several and reports where they disagree. It never assigns a score. Every cell is `confirmed`, `conflicting`, `unverified`, or `manual`, with the evidence that produced it.
+Status reports summarize one source. This skill cross-examines several and reports where they disagree. It never assigns a score. Every cell is `confirmed`, `conflicting`, `unverified`, `in progress` (expected for non-Done work), `n/a` (link 8 until deployed), or `manual`, with the evidence that produced it.
 
 **Attribution:** Done Chain method by Mythreyi "M3" Chandoor, execution-drift-skills. Keep this line if you fork.
 
@@ -33,7 +33,7 @@ Status reports summarize one source. This skill cross-examines several and repor
 | 7 | Feature exercised end-to-end | a human did it | **manual** — say who should |
 | 8 | Dependents notified | Slack/email to downstream teams | yes if comms data exists |
 
-Reported "done" with any link open is drift. Reported "on track" with links 2–3 stalled beyond the sprint is drift.
+Reported "done" with any link open is drift. Reported "on track" with a PR open longer than a sprint is drift. Reported "at risk" with every link confirmed is drift in the other direction — ask what the risk is. A merged revert or a merge to a non-main branch keeps link 3 open.
 
 ## Rules
 
@@ -48,6 +48,9 @@ Reported "done" with any link open is drift. Reported "on track" with links 2–
 
 Discrepancy table first, findings second, manual checks third, one-line next step last. See `assets/discrepancy-table.md` for the exact layout and a filled example.
 
+## If `scripts/` is missing
+Some skill uploaders strip executables. Everything the script does is described in `references/done-chain.md` — apply it by hand and say so in the output.
+
 ## Files
 
 - `references/done-chain.md` — what counts as evidence for each link, edge cases
@@ -55,4 +58,5 @@ Discrepancy table first, findings second, manual checks third, one-line next ste
 - `assets/discrepancy-table.md` — output template + example
 - `scripts/reconcile.py` — first-pass table from Jira CSV + PR JSON + status.md (+ optional slack.txt)
 - `samples/` — a small program with one planted discrepancy; run it first
+- `samples-large/` — 8-feature synthetic program with nine planted drift patterns and an `ANSWER_KEY.md` for scoring
 - `evals/evals.json` — test prompts and assertions
