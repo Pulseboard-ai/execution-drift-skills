@@ -1,0 +1,6 @@
+[
+ {"number": 84, "title": "PAY-141 single-page checkout", "state": "MERGED", "isDraft": false, "mergedAt": "2026-08-06T15:02:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/example/shop/pull/84"},
+ {"number": 86, "title": "PAY-142 saved cards", "state": "MERGED", "isDraft": false, "mergedAt": "2026-08-08T11:40:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/example/shop/pull/86"},
+ {"number": 88, "title": "PAY-143 tax recalculation on address change", "state": "OPEN", "isDraft": true, "mergedAt": null, "baseRefName": "main", "body": "WIP — needs tax service contract", "url": "https://github.com/example/shop/pull/88"},
+ {"number": 90, "title": "PAY-161 PAY-162 search filters", "state": "MERGED", "isDraft": false, "mergedAt": "2026-08-14T09:10:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/example/shop/pull/90"}
+]

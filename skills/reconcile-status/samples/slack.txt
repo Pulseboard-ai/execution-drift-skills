@@ -1,0 +1,7 @@
+2026-08-08 12:05 #payments-eng @lena: PAY-142 merged, saved cards in staging
+2026-08-10 16:30 #billing-team @lena: heads up billing-team, checkout v2 PAY-140 lands next week, no API changes expected
+2026-08-11 09:14 #payments-eng @raj: PAY-143 PR #88 up as draft, blocked on tax service contract from platform
+2026-08-14 10:02 #releases @ci: deployed search filters PAY-161 PAY-162 to prod build 2026.08.14.1
+2026-08-14 10:30 #catalog-team @maya: catalog-team FYI PAY-160 search filters are live, index schema unchanged
+2026-08-14 11:00 #qa @sam: PAY-163 qa passed on prod
+2026-08-15 17:45 #payments-eng @sam: PAY-151 sev-2 on saved cards, CVV re-prompt loops, repro attached

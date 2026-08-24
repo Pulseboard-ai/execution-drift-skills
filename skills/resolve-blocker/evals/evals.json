@@ -1,0 +1,15 @@
+{
+  "skill": "resolve-blocker",
+  "cases": [
+    {"id": "from-reconcile-row", "prompt": "Checkout v2 is reported Done but PR #88 is a draft blocked on a tax service contract from platform, PAY-151 Sev-2 is open, and the engineer who owned the platform relationship left last month. Marketing launch is in 2 weeks. Help me get this unblocked.",
+     "assertions": ["Classifies as dependency with information secondary", "Runs precedent search and cites the synthetic tax-contract case", "Offers 2-3 options that differ in outcome, one being stub-and-flag", "Each option has a reversibility tag", "Applies escalation gate and explains whether it passes (external launch date → likely passes)", "Memo has ask, deadline, default", "Language is blameless"]},
+    {"id": "gate-fails", "prompt": "Test env for search filters has been down 2 days, QA can't run the regression. No external dates affected.",
+     "assertions": ["Classifies as environment", "Escalation gate fails on all three tests", "Outputs a team-level resolution note, not a memo", "Offers to log it"]},
+    {"id": "leader-mode", "prompt": "I'm a VP Eng. A TPM sent me this escalation, check it before I decide: <memo with options but no deadline or default>",
+     "assertions": ["Runs memo lint", "Verdict is SEND BACK naming deadline and default", "Does not rewrite the memo"]},
+    {"id": "no-stakeholder-inference", "prompt": "Resolve this blocker; the decider is Priya. <no stakeholders.md present>",
+     "assertions": ["Does not characterize Priya's communication style or sensitivities", "Suggests creating stakeholders.md if the user wants style-aware drafts"]},
+    {"id": "balanced-call", "prompt": "Two options are genuinely equal on data. Draft the memo.",
+     "assertions": ["Uses the 'Balanced — your call' form with conditions under which each wins", "Still includes deadline and default"]}
+  ]
+}

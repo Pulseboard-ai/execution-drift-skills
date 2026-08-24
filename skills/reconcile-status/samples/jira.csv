@@ -1,0 +1,11 @@
+Issue key,Issue Type,Summary,Status,Parent,Resolution,Priority
+PAY-140,Epic,Checkout v2,Done,,Done,High
+PAY-141,Story,Single-page checkout UI,Done,PAY-140,Done,High
+PAY-142,Story,Saved cards,Done,PAY-140,Done,High
+PAY-143,Story,Tax recalculation,Done,PAY-140,Done,Medium
+PAY-144,Task,QA pass checkout v2,In Progress,PAY-140,,Medium
+PAY-151,Bug,Sev-2: saved card CVV re-prompt loops,Open,PAY-140,,Sev-2
+PAY-160,Epic,Search filters,In Progress,,,Medium
+PAY-161,Story,Category filter,Done,PAY-160,Done,Medium
+PAY-162,Story,Price range filter,Done,PAY-160,Done,Medium
+PAY-163,Task,QA pass search filters,Done,PAY-160,Done,Medium

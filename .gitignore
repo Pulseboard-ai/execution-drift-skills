@@ -1,0 +1,7 @@
+# personal / program data — never commit
+stakeholders.md
+skills/resolve-blocker/resolutions/*.md
+!skills/resolve-blocker/resolutions/SCHEMA.md
+skills/resolve-blocker/resolutions/seed/*.private.md
+__pycache__/
+.DS_Store
