@@ -7,9 +7,13 @@ Status reports summarize one tool. These skills cross-examine several — the st
 | Skill | What it does | Who runs it |
 |---|---|---|
 | `reconcile-status` | Walks every feature through the 8-link **Done Chain** and flags where "done" isn't | TPM, EM |
+| `release-readiness` | Checks a release against what was **committed** in planning — GO / NO-GO with a reason per feature, uncommitted work that rode along, stakeholders not told | TPM, EM, release manager |
+| `reconcile-dependencies` | Finds **phantom dependencies** by diffing what PRDs declare against what tickets, PRs and Slack actually reference; flags systems whose owner has left | TPM, EM, planning |
 | `resolve-blocker` | Takes one discrepancy and produces the play: gap → precedent → stakeholders → options → pre-wire → decision memo | TPM, leader (memo lint mode) |
 
-Coming: `release-readiness`, `reconcile-dependencies`, `reconcile-plan`.
+All four share one output contract: ✔ confirmed · ✖ conflicting · ? unverified · manual, with the source behind every cell.
+
+Coming: `reconcile-plan` (quarterly commitments vs delivery).
 
 ## Install
 
@@ -20,6 +24,8 @@ npx skills add <org>/execution-drift-skills --skill resolve-blocker
 
 # manual
 cp -r skills/reconcile-status ~/.claude/skills/
+cp -r skills/release-readiness ~/.claude/skills/
+cp -r skills/reconcile-dependencies ~/.claude/skills/
 cp -r skills/resolve-blocker  ~/.claude/skills/
 ```
 
@@ -31,7 +37,7 @@ Claude.ai / Cowork: upload the skill folder as a custom skill. Both skills accep
 > Run reconcile-status on skills/reconcile-status/samples-large and score it against ANSWER_KEY.md
 ```
 
-Eight features, nine planted drift patterns — a reverted deploy, a PR merged to the wrong branch, a sandbagged "at risk", a dependency the tester found that the PRD never named. All synthetic.
+Then `release-readiness` and `reconcile-dependencies` on the same folder. Eight features, nine planted drift patterns — a reverted deploy, a PR merged to the wrong branch, a sandbagged "at risk", a dependency the tester found that the PRD never named. All synthetic.
 
 ## Inputs
 

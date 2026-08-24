@@ -1,0 +1,13 @@
+{
+  "skill": "reconcile-dependencies",
+  "cases": [
+    {"id": "samples-large", "prompt": "Map the real dependencies for the Orders program and tell me what the PRDs missed. Files in samples-large.",
+     "assertions": ["Order SMS → Carrier rate API (FUL-310) listed as phantom with the 08-14 QA message", "Email templates v2 → design tokens listed as phantom (phrase-only, from slack, no key)", "Promo codes ↔ picking UI co-deployment NOT listed as a dependency", "Knowledge gap on carrier webhook contract: priya departed 07-31, raj asking 08-16", "Four declared-not-observed deps shown as ? with what would confirm them", "Phantom finding says how it was missed (found in QA, not in PRD)"]},
+    {"id": "owner-left", "prompt": "Our platform lead left last month and things keep coming up that nobody knew about. <jira.csv with Assignee, departed.txt>",
+     "assertions": ["Lists systems by last owner, not the person as the problem", "Suggests the two-day history-mining spike from precedent"]},
+    {"id": "no-prd", "prompt": "Find dependencies. <jira.csv, prs.json, slack.txt, no prd.md>",
+     "assertions": ["Reports everything observed as undeclared (no PRD to check against) and says so", "Does not fabricate a declared column"]},
+    {"id": "no-graph", "prompt": "Run reconcile-dependencies on samples-large.",
+     "assertions": ["Produces table + phantom list, no diagram unless asked"]}
+  ]
+}

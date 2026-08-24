@@ -15,3 +15,5 @@
 2026-08-14 11:30 #qa @sam: FUL-315 sev-2 filed: rate cache returns stale prices after carrier timeout
 2026-08-15 10:00 #fulfillment-eng @raj: finance-team heads up ORD-220 promo codes shipped, stacking rules ORD-223 deferred to Q4
 2026-08-15 16:40 #notifications-eng @mei: NTF-411 still WIP, waiting on design tokens
+2026-08-15 13:10 #fulfillment-eng @raj: FUL-330 label printer hotfix merged and deployed, not in the release plan but customers were blocked
+2026-08-16 09:00 #fulfillment-eng @raj: anyone know which team owns the carrier webhook contract? priya set it up before she left

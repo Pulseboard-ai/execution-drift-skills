@@ -1,11 +1,112 @@
 [
- {"number": 120, "title": "ORD-201 ORD-202 guest checkout", "state": "MERGED", "isDraft": false, "createdAt": "2026-07-28T10:00:00Z", "mergedAt": "2026-08-04T16:00:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/synthetic/orders/pull/120"},
- {"number": 131, "title": "ORD-211 ORD-212 address validation", "state": "MERGED", "isDraft": false, "createdAt": "2026-08-01T09:00:00Z", "mergedAt": "2026-08-11T14:20:00Z", "baseRefName": "feat/address-validation", "body": "merging into feature branch pending main integration", "url": "https://github.com/synthetic/orders/pull/131"},
- {"number": 138, "title": "ORD-221 ORD-222 promo codes", "state": "MERGED", "isDraft": false, "createdAt": "2026-07-30T11:00:00Z", "mergedAt": "2026-08-07T12:00:00Z", "baseRefName": "main", "body": "ORD-223 stacking deferred", "url": "https://github.com/synthetic/orders/pull/138"},
- {"number": 145, "title": "FUL-301 FUL-302 split shipments", "state": "MERGED", "isDraft": false, "createdAt": "2026-08-03T10:00:00Z", "mergedAt": "2026-08-12T10:30:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/synthetic/orders/pull/145"},
- {"number": 149, "title": "Revert \"FUL-301 FUL-302 split shipments\"", "state": "MERGED", "isDraft": false, "createdAt": "2026-08-13T08:00:00Z", "mergedAt": "2026-08-13T09:15:00Z", "baseRefName": "main", "body": "reverting #145, inventory double-decrement", "url": "https://github.com/synthetic/orders/pull/149"},
- {"number": 142, "title": "FUL-311 FUL-312 carrier rate API", "state": "MERGED", "isDraft": false, "createdAt": "2026-08-02T10:00:00Z", "mergedAt": "2026-08-13T17:00:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/synthetic/orders/pull/142"},
- {"number": 140, "title": "FUL-321 picking UI by zone", "state": "MERGED", "isDraft": false, "createdAt": "2026-07-29T10:00:00Z", "mergedAt": "2026-08-06T15:00:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/synthetic/orders/pull/140"},
- {"number": 136, "title": "NTF-401 NTF-402 order SMS", "state": "MERGED", "isDraft": false, "createdAt": "2026-07-31T10:00:00Z", "mergedAt": "2026-08-08T11:00:00Z", "baseRefName": "main", "body": "", "url": "https://github.com/synthetic/orders/pull/136"},
- {"number": 133, "title": "NTF-411 responsive email templates", "state": "OPEN", "isDraft": true, "createdAt": "2026-07-24T10:00:00Z", "mergedAt": null, "baseRefName": "main", "body": "WIP", "url": "https://github.com/synthetic/orders/pull/133"}
+ {
+  "number": 120,
+  "title": "ORD-201 ORD-202 guest checkout",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-07-28T10:00:00Z",
+  "mergedAt": "2026-08-04T16:00:00Z",
+  "baseRefName": "main",
+  "body": "",
+  "url": "https://github.com/synthetic/orders/pull/120"
+ },
+ {
+  "number": 131,
+  "title": "ORD-211 ORD-212 address validation",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-08-01T09:00:00Z",
+  "mergedAt": "2026-08-11T14:20:00Z",
+  "baseRefName": "feat/address-validation",
+  "body": "merging into feature branch pending main integration",
+  "url": "https://github.com/synthetic/orders/pull/131"
+ },
+ {
+  "number": 138,
+  "title": "ORD-221 ORD-222 promo codes",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-07-30T11:00:00Z",
+  "mergedAt": "2026-08-07T12:00:00Z",
+  "baseRefName": "main",
+  "body": "ORD-223 stacking deferred",
+  "url": "https://github.com/synthetic/orders/pull/138"
+ },
+ {
+  "number": 145,
+  "title": "FUL-301 FUL-302 split shipments",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-08-03T10:00:00Z",
+  "mergedAt": "2026-08-12T10:30:00Z",
+  "baseRefName": "main",
+  "body": "",
+  "url": "https://github.com/synthetic/orders/pull/145"
+ },
+ {
+  "number": 149,
+  "title": "Revert \"FUL-301 FUL-302 split shipments\"",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-08-13T08:00:00Z",
+  "mergedAt": "2026-08-13T09:15:00Z",
+  "baseRefName": "main",
+  "body": "reverting #145, inventory double-decrement",
+  "url": "https://github.com/synthetic/orders/pull/149"
+ },
+ {
+  "number": 142,
+  "title": "FUL-311 FUL-312 carrier rate API",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-08-02T10:00:00Z",
+  "mergedAt": "2026-08-13T17:00:00Z",
+  "baseRefName": "main",
+  "body": "",
+  "url": "https://github.com/synthetic/orders/pull/142"
+ },
+ {
+  "number": 140,
+  "title": "FUL-321 picking UI by zone",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-07-29T10:00:00Z",
+  "mergedAt": "2026-08-06T15:00:00Z",
+  "baseRefName": "main",
+  "body": "",
+  "url": "https://github.com/synthetic/orders/pull/140"
+ },
+ {
+  "number": 136,
+  "title": "NTF-401 NTF-402 order SMS",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-07-31T10:00:00Z",
+  "mergedAt": "2026-08-08T11:00:00Z",
+  "baseRefName": "main",
+  "body": "",
+  "url": "https://github.com/synthetic/orders/pull/136"
+ },
+ {
+  "number": 133,
+  "title": "NTF-411 responsive email templates",
+  "state": "OPEN",
+  "isDraft": true,
+  "createdAt": "2026-07-24T10:00:00Z",
+  "mergedAt": null,
+  "baseRefName": "main",
+  "body": "WIP",
+  "url": "https://github.com/synthetic/orders/pull/133"
+ },
+ {
+  "number": 147,
+  "title": "FUL-330 hotfix: label printer timeout",
+  "state": "MERGED",
+  "isDraft": false,
+  "createdAt": "2026-08-15T09:00:00Z",
+  "mergedAt": "2026-08-15T13:00:00Z",
+  "baseRefName": "main",
+  "body": "urgent, not in release plan",
+  "url": "https://github.com/synthetic/orders/pull/147"
+ }
 ]

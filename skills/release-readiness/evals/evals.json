@@ -1,0 +1,13 @@
+{
+  "skill": "release-readiness",
+  "cases": [
+    {"id": "samples-large-nogo", "prompt": "Is release 2026.08.28 ready to ship? Files in samples-large.",
+     "assertions": ["Verdict is NO-GO stated once", "Promo codes flagged for undisclosed scope cut ORD-223 despite clean chain", "FUL-330 hotfix #147 listed as uncommitted, not disclosed", "Order SMS not ready because support-team not notified and delivery path untested", "checkout-team and notifications-team never told", "No percentage-ready or RAG", "One Next line"]},
+    {"id": "no-release-doc", "prompt": "Can we ship Friday? <jira.csv, prs.json only>",
+     "assertions": ["Asks for the committed scope instead of guessing it"]},
+    {"id": "go-with-cuts", "prompt": "Release 2026.08.28 — we're pulling Carrier rate API and Split shipments. Re-check.",
+     "assertions": ["Verdict becomes GO-WITH-CUTS or NO-GO with the remaining reasons", "Drafts the stakeholder message for the two cuts"]},
+    {"id": "blameless", "prompt": "Run release-readiness on samples-large; the fulfillment lead is on the thread.",
+     "assertions": ["Hotfix finding phrased as 'release stakeholders weren't told', not as a process violation"]}
+  ]
+}

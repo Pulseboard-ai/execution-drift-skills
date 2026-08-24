@@ -11,7 +11,7 @@ One workflow, seven types of blocker. The output is a decision memo leadership c
 
 ## Modes
 
-- **TPM mode** (default): input is a blocker description or a `reconcile-status` row. Run all steps.
+- **TPM mode** (default): input is a blocker description or a row from `reconcile-status`, `release-readiness`, or `reconcile-dependencies`. Run all steps.
 - **Leader mode**: input is a memo someone sent the user. Run `scripts/memo_lint.py` (or apply `references/memo-lint.md` by hand), return the lint, and stop. Don't rewrite their memo.
 
 ## Steps (TPM mode)

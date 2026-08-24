@@ -16,3 +16,13 @@ Cells: ✔ confirmed · ✖ conflicting · ? unverified · ○ in progress (expe
 Script-vs-agent: the script produces rows 2–6 and 8 exactly. Row 7 link 4 and the design-token dependency need the agent to read slack.txt — the script has no key to match on. Expected Next: line → Carrier rate API (highest severity: three ✖ plus a Sev-2).
 
 Manual checks expected: link 1 on every row (with R-7 and R-14 called out), link 7 on every Done row. Unmapped evidence: none.
+
+## release-readiness (release.md)
+- Committed 5; ready 0 of 5 at status date (ORD-210 off-branch; ORD-220 ready but scope cut R-7 undisclosed; FUL-300 reverted; FUL-310 not deployed + Sev-2; NTF-400 R-14 untested)
+- Uncommitted in release: FUL-330 hotfix (#147) — scope creep, not communicated to release stakeholders
+- Verdict: NO-GO with the reasons per feature; not a score
+
+## reconcile-dependencies
+- Declared+observed: ORD-200→support-team (08-05 msg), FUL-320→ops-team, NTF-400→support-team (declared, NOT observed post-deploy → unverified)
+- Phantom (observed, not declared): NTF-400→FUL-310 (08-14 QA), NTF-410→design tokens (08-15), ORD-220→FUL-321 same deploy (weak, note only)
+- Knowledge gap: FUL-311/312 assignee priya departed 07-31; 08-16 "who owns the carrier webhook contract" — owner-left signal on FUL-310

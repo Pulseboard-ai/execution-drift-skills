@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 — 2026-08-24
+- `release-readiness`: commitment-vs-delivery check, scope creep/cut detection, stakeholder comms after last change, GO/NO-GO verdict
+- `reconcile-dependencies`: declared-vs-observed table, directional phantom detection, co-deployment excluded, owner-gone knowledge gaps
+- samples-large: release.md, uncommitted hotfix, Assignee column, departed.txt
+
 ## 0.2.0 — 2026-08-24
 - `reconcile-status`: samples-large with answer key; revert, non-main branch, stalled PR, sandbag, Won't Do, undeclared-dependency detection; severity-sorted Next line
 - both skills: guidance for when scripts/ is stripped by an uploader
