@@ -1,5 +1,5 @@
 ---
-date: 2025-03-10
+date: 2022-03-10
 type: resource
 secondary: information
 keywords: [attrition, handoff, knowledge, mid-feature, bus-factor]
