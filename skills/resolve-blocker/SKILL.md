@@ -43,6 +43,6 @@ One workflow, seven types of blocker. The output is a decision memo leadership c
 - `assets/decision-memo.md` — one-page template
 - `assets/outreach-templates.md` — SME ask, pre-wire 1:1, notify-dependents
 - `assets/stakeholders.template.md` — copy to repo root as `stakeholders.md` (gitignored)
-- `resolutions/SCHEMA.md` — precedent log format; `resolutions/seed/` has labeled synthetic examples
+- `resolutions/SCHEMA.md` — precedent log format; `resolutions/seed/` holds 12 anonymized precedent cases
 - `scripts/precedent_search.py`, `scripts/memo_lint.py`
 - `evals/evals.json`
